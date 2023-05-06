@@ -1,6 +1,8 @@
+import TasksList from '../components/TasksList'
+
 function TaskPage () {
   return (
-    <div>TaskPage</div>
+    <TasksList />
   )
 }
 
