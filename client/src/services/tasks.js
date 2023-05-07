@@ -19,3 +19,6 @@ export const getTasks = async () => {
 
 export const createTask = async (task) =>
   tasksAPI.post('/', task)
+
+export const deleteTask = async (id) =>
+  tasksAPI.delete(`/${id}/`)
