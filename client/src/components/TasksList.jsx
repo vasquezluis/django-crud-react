@@ -6,12 +6,10 @@ function TasksList () {
   const [tasks, setTasks] = useState([])
 
   useEffect(() => {
-    const response = async () => {
+    (async () => {
       const result = await getTasks()
-      const data = await result.data
-      setTasks(data)
-    }
-    response()
+      setTasks(result)
+    })()
   }, [])
 
   return (
